@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>techintext</title>
+    <link rel="stylesheet" href="git.css">
+    <link rel="icon" href="./Images/logo-bg.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="pageloader" style="margin: auto;text-align: center;position: relative;;">
+        <h1>Pageloading</h1>
+    </div>
+
+    <div class="header">
+        <a href="">
+            <img src="./Images/logo.jpeg" alt="logo"><br>
+            <span >TECH IN TEXT</span>
+        </a>
+    </div>
+    
+    <div class="navi">
+        
+            <a href="index.html"><label for="">HOME</label></a>
+          <!-- <a href="contact.html">   <label for="">CONTACT</label></a>
+            <a href="help.html"> <label for="">HELP</label></a>
+            --> 
+    </div>
+      <!--Scroller-->
+      <div class="Scroller">
+        <div class="ScrollC" >
+            <img src="Images/Freenom.png" >
+            <img src="Images/instagram.png" >
+            <img src="Images/store.png">
+        </div>
+    </div>
+
+    <div class="main">  
+    
+            <div class="gitintro">
+                <img src="./Images/git.png" alt="" style="width: 15%;height: 10%;">
+                 <h1> ~ version controlling system</h1>
+            </div>
+
+            <div class="gitsetup">
+                 <div class="commands">
+                    <h2>git init</h2>
+                </div>
+
+                <div class="commands">
+                    <h2>git push</h2>
+                </div>
+
+                <div class="commands">
+                    <h2>git pull</h2>
+                </div>
+
+                <div class="commands">
+                    <h2>git merge</h2>
+                </div>
+            </div>
+
+    </div>
+    <hr>
+    <div class="footer">
+        <div class="foot" id="lines">
+            <label><i>TECH IN TEXT</i></label><br>
+            <img src="./Images/logo-bg.png" alt="" style="width:20%;">
+        </div>
+        <div class="foot" id="lines">
+            <label for="">ABOUT US</label>
+            <br><br>
+            <div class="footimg"><img src="./Images/worldwide.svg" alt="" style="width: 7%;"><p>INDIA</p></div>
+        </div>
+        <div class="foot" id="lines">
+            <label for="">LINKS USEFUL</label>
+        </div>
+        <div class="foot">
+            <label for="">CONTACT</label><br><br>
+            <div class="imgflex">
+           <div class=footimg><a href="mailto: techintext#gmail.com?subject=Response" target="_blank"><img src="./Images/gmail.svg" alt=""></a><p>techintext@gmail.com</p></div>
+          <div class="footimg"><a href="https://www.instagram.com/techintext/"  target="_blank"><img src="./Images/instagram.svg" alt=""></a><p>techintext</p></div>   
+        </div>
+        
+        </div>
+    </div>
+     <!--Scripting JS-->
+     <script> 
+        document.onreadystatechange = function() { 
+            if (document.readyState !== "complete") { 
+                document.querySelector( 
+                "body").style.visibility = "hidden"; 
+                document.querySelector( 
+                ".pageloader").style.visibility = "visible"; 
+            } else { 
+                document.querySelector( 
+                ".pageloader").style.display = "none"; 
+                document.querySelector( 
+                "body").style.visibility = "visible"; 
+            } 
+        }; 
+    </script> 
+</body>
+</html>
