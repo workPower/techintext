@@ -15,8 +15,8 @@ body::-webkit-scrollbar{
     -ms-overflow-style: none; /* IE 11 */
     scrollbar-width: none; /* Firefox 64 */
 }
-*{   
-    color: purple;
+ *{   
+    color: #3f2c00;
 }
 div.header {
     margin: auto;
@@ -24,18 +24,18 @@ div.header {
     text-align: center;
     align-items: center;
     padding-bottom: 3px;
-    border-left: 1px solid purple;
+    border-left: 1px solid #3f2c00;
     border-top-left-radius: 15%;
     border-top-right-radius: 15%;
-    border-right: 1px solid purple;
-    border-bottom: 2px solid purple;
+    border-right: 1px solid #3f2c00;
+    border-bottom: 2px solid #3f2c00;
     border-bottom-left-radius: 25%;
     border-bottom-right-radius: 25%;
 }
 
 div.header a{
     text-decoration: none;
-    color: purple;
+    color: #3f2c00;
 }
 
 div.navi{
@@ -44,17 +44,17 @@ div.navi{
     font-size: 21px;
     padding-top: 3px;
     padding-bottom: 3px;
-    border-left: 1px solid purple;
-    border-right: 1px solid purple;
+    border-left: 1px solid #3f2c00;
+    border-right: 1px solid #3f2c00;
     border-top-left-radius: 3%;
     border-top-right-radius: 3%;
-    border-bottom: 2px solid purple;
+    border-bottom: 2px solid #3f2c00;
     border-bottom-left-radius: 15%;
     border-bottom-right-radius: 15%;
 }
 div.navi a{
     text-decoration: none;
-    color: purple;
+    color: #3f2c00;
     margin-left: 20px;
 }
 /* Scroller */
@@ -62,7 +62,7 @@ div.navi a{
     margin-top: 2px;
     overflow: hidden;
     position: relative;
-    border-bottom: 2px solid purple;
+    border-bottom: 2px solid #3f2c00;
     border-bottom-left-radius: 3%;
     border-bottom-right-radius: 3%;
 }
@@ -99,19 +99,21 @@ div.navi a{
 div.main{
     margin: 3px;
     width: 100%;
-    height:100vh;
+
 }
+.listing {
+    display: flex;
+    flex-wrap: wrap;
+}
+.listing span{
+    width: 15%;
+    margin: 10px;
+}
+
 .gitintro{
     width: 100%;
-    height: auto;
-    display: flex;
-    color: #3f2c00;
-    align-items: center;
-}
-.gitintro h1{
-    color: #3f2c00;
-    font-weight: bolder; 
-    margin-left:10px ;
+    height: auto;  
+
 }
 .gitsetup{
     display: flex;
@@ -119,7 +121,14 @@ div.main{
     flex-wrap: wrap;
 }
 .commands{
-    width: 30%;
+    margin: 10px;
+    text-align: center;
+    background-color:#e1ede5;
+    border-radius: 10%;
+    padding: 10px;
+}
+.commands ul{
+    margin-left: 0ch;
 }
 .footer{
     display: flex;

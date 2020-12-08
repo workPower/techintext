@@ -38,28 +38,127 @@
     <div class="main">  
     
             <div class="gitintro">
-                <img src="./Images/git.png" alt="" style="width: 15%;height: 10%;">
-                 <h1> ~ version controlling system</h1>
+             <label for=""> <a href="https://git-scm.com/">
+                 <img src="./Images/git.png" alt="" style="width: 15%;height: 80%;"></a> 
+                </label> <h2>~ version controlling system</h2> 
             </div>
-
+            <p>Git is a free and open source distributed version control system designed
+                 to handle everything from small to very large projects with speed 
+                 and efficiency. Git is easy to learn and has a tiny footprint with
+                  lightning fast performance .</p>
+                <div class="listing">
+                    <span>Developer(s)	:Junio Hamano & other's</span>
+                    <span>Initial release: 7 April 2005  Lastest release: 29 October 2020</span>
+                    <span>Written in: C, Shell, Perl, Tcl, Python</span>
+                    <span> Operating system: Linux, macOS., Windows</span>
+                </div>
+            <p>git has three area's i.e 1) Working area: Initial Stage   currently  creating, inserting, updating new data files
+                2) Index area | Staging area:Second Satge | Ready to  commit  inserted , updated data in file &
+                 3)Local repository:Final Stage  | Commit the new changes of file  </p>
             <div class="gitsetup">
-                 <div class="commands">
+                <div class="commands">
                     <h2>git init</h2>
+                    <p>adding git to the repository i.e version controlling</p>
+
+                    <h2>git log</h2>
+                    <p>Eg: git log  </p>
+                    <p>get  history  record of operations done</p>
+                </div>
+                
+                <div class="commands">
+                    <h2>git add</h2>
+                    <p>move the files from working area to  staging area</p>
+                    <p>Eg: git add filename ~ single file</p>
+                    <p>Eg: git add *.type(.txt .c .sh .py .java) ~ specific group-files</p>
+                    <p>Eg: git add * ~ all files</p>
                 </div>
 
                 <div class="commands">
                     <h2>git push</h2>
+                    <p>Eg: git push origin master</p>
+                    <p>master: branch</p>
+                    <p>origin: alias  name for remote repository</p>
+                </div>
+
+                
+                <div class="commands">
+                    <h2>git status</h2>
+                    <p>Eg: git status </p>
+                    <p>get  present status of file's | branch's</p>
                 </div>
 
                 <div class="commands">
                     <h2>git pull</h2>
+                    <p>gitpull = gitfetch + gitmerge</p>
+                    <p>gitfetch: checks the changes|updates
+                         in remote repository but it will not update 
+                         in local repository </p>
+                    <p>gitmerge: will merge updated data from 
+                        remote to local
+                    </p>
                 </div>
 
                 <div class="commands">
-                    <h2>git merge</h2>
+                    <h2>git clone</h2>
+                    <p>get the remote repository (from remote location) to local repository (to local machine)</p>
+                    <p>Eg: git clone URL (https://gihub.com/user/
+                        repository)</p>
+                </div>
+
+
+                  <div class="commands">
+                    <h2>git branch</h2>
+                    <p>create Eg: git branch branchname</p>
+                    <p>delete Eg: git branch -d branchname </p>
+                        Note:deletion can done only
+                        after the commits of branch to 
+                        another branch or master
+                    <p>force-delete Eg: git branch -D branchname</p>
+                        Note: all  the created,updated commit files
+                        in that branch will deleted
+                    
+                </div>
+
+                <div class="commands">
+                    <h2>git checkout ~local</h2>
+                    <p>use the move the currentWorking branch 
+                        to  some-other branch
+                      <p> Eg: git checkout branchname</p> 
+                    </p>
+                    <p> It is also  used for reverse stage of files
+                      <p>  Eg: git checkout filename ~single_file </p>
+                      <p>   Eg: git checkout .  ~multiple_files </p>
+                        Note:it can perform before moving 
+                        files to Staging_area
+                </div>
+
+                <div class="commands">
+                    <h2>git reset (3 types) ~local</h2>
+                    <p>mixed_reset (default) 
+                        Eg: git reset HEAD~1
+                      removes recent one commit</p>
+                    <p>soft reset Eg: git reset --soft HEAD~2 
+                           moves 2 commit's ~ files to Staging area so that 
+                           we can commit if we want recent 2 commits
+                    </p>
+                    <p>heard_reset Eg: git reset --hard HEAD~3
+                        it will completely removes last 3 commit's ~updated files
+                        & not available even in Staging area | Working area
+                    </p>
+                </div>
+                <div class="commands"  >
+                    <h2>git revert</h2><span>remote repository</span>
+                    <label> git revet commit_ID</label>
+                    <p>git revert -Note: You can revert any  particular commit</p>
+                    <p>git checkout | git reset -Note: you can reset only  step-wise</p>
+                </div>
+    
+                <div class="commands" >
+                    <h2>git megre-tool [diff-merge]</h2>
+                    <a href="https://sourcegear.com/diffmerge/"><img src="./Images/DiffMerge.png" alt="" style="border-radius: 10%;"></a>
                 </div>
             </div>
-
+           
     </div>
     <hr>
     <div class="footer">
