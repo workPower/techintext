@@ -104,17 +104,22 @@ div.main{
     height:100vh;
 }
 .os{
-    width: 100%;
+    width: 15%;
     height: auto;
     display: flex;
     margin:auto;
     border: 1px solid black;
+    border-radius: 50%;
 }
 .os h3{
     margin-top: 2px;
     margin-left: 10px;
+    text-align: center;
 }
-
+.os img{
+    width:100%;
+    border-radius: 50%;
+}
 .footer{
     display: flex;
     flex-wrap: wrap;  

@@ -1,8 +1,27 @@
 /*
 body{
-    background-image: linear-gradient(to right,white, rgba(69, 226, 140, 0.699));
+    animation: bg 25s linear infinite;
 }
+
+    @keyframes bg {
+        0%{
+            background-image: linear-gradient(to left,rgb(240, 211, 211), rgba(95, 253, 3, 0.699));
+         }
+        25%{
+            background-image: linear-gradient(to left,rgb(250, 20, 20), rgb(240, 211, 211));
+        }
+        50%{
+            background-image: linear-gradient(to left,rgb(250, 28, 157), rgb(250, 20, 20));
+        }
+        70%{
+            background-image: linear-gradient(to left,rgb(54, 159, 219), rgb(231, 235, 21));
+        }
+        100%{
+            background-image: linear-gradient(to left,rgba(95, 253, 3, 0.699), rgb(54, 159, 219));
+        }
+    }
 */
+
 body::-webkit-scrollbar{
     display: none;
     overflow: auto;
@@ -79,7 +98,7 @@ div.navi a{
   width: 110px;
   padding: 5px;
   opacity: 100%;
-  border: 1px solid whitesmoke;
+  border: 0px solid whitesmoke;
   border-radius: 2%;
 }
 
@@ -104,7 +123,7 @@ div.main{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    height:100vh;
+    height:auto;
 }
 
 .item {
@@ -112,7 +131,7 @@ div.main{
     border: 1px solid rgb(240, 104, 240);
     border-radius: 5%;
     width: 16%;
-    height: 300px;
+    height: auto;
 }
 
 #content{
@@ -145,4 +164,8 @@ div.main{
 }
 #lines {
     border-right: 1px solid  rgb(218, 218, 218);
+}
+
+.mySlides{
+    border-radius: 10%;
 }

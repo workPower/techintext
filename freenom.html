@@ -59,12 +59,12 @@
             <li>Checkout ,Fill-details & enter your mail ID ,Verify and get  it. </li>
       
     <div class="content">
-      <div class="pics"> <a href="./Images/freenom-content1.png" download="freenom1" target="_blank"> <img src="./Images/freenom-content1.png" alt=""> </a></div>
-      <div class="pics"> <a href="./Images/freenom-content2.png" download="freenom2" target="_blank"> <img src="./Images/freenom-content2.png" alt=""> </a></div>
-      <div class="pics"> <a href="./Images/freenom-content3.png" download="freenom3" target="_blank"> <img src="./Images/freenom-content3.png" alt=""> </a></div>
-      <div class="pics"> <a href="./Images/freenom-content4.png" download="freenom4" target="_blank"> <img src="./Images/freenom-content4.png" alt=""> </a></div>
-      <div class="pics"> <a href="./Images/freenom-content5.png" download="freenom5" target="_blank"> <img src="./Images/freenom-content5.png" alt=""> </a></div>
-      <div class="pics"> <a href="./Images/freenom-content6.png" download="freenom6" target="_blank"> <img src="./Images/freenom-content6.png" alt=""> </a></div>
+      <div class="pics"> <a href="./Images/freenom-content1.png"  target="_blank"> <img src="./Images/freenom-content1.png" alt=""> </a></div>
+      <div class="pics"> <a href="./Images/freenom-content2.png"  target="_blank"> <img src="./Images/freenom-content2.png" alt=""> </a></div>
+      <div class="pics"> <a href="./Images/freenom-content3.png"  target="_blank"> <img src="./Images/freenom-content3.png" alt=""> </a></div>
+      <div class="pics"> <a href="./Images/freenom-content4.png"  target="_blank"> <img src="./Images/freenom-content4.png" alt=""> </a></div>
+      <div class="pics"> <a href="./Images/freenom-content5.png"  target="_blank"> <img src="./Images/freenom-content5.png" alt=""> </a></div>
+      <div class="pics"> <a href="./Images/freenom-content6.png"  target="_blank"> <img src="./Images/freenom-content6.png" alt=""> </a></div>
     </div>
     
 </div>
@@ -106,6 +106,22 @@
                 "body").style.visibility = "visible"; 
             } 
         }; 
+
+         // Freemon Image Slide's
+         var slideIndex = 0;
+        carousel();
+
+        function carousel() {
+        var i;
+        var x = document.getElementsByClassName("pics");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none"; 
+        }
+        slideIndex++;
+        if (slideIndex > x.length) {slideIndex = 1} 
+        x[slideIndex-1].style.display = "block"; 
+        setTimeout(carousel, 2000); 
+        }
     </script> 
 </body>
 </html>
