@@ -146,9 +146,11 @@ div.main{
 }
 .foot{
     margin: 1px;
-    width: 24%;
+    width: 33%;
     text-align: center;
     padding-top: 20px;
+    align-content: center;
+    justify-content: center;
 }
 .foot label{
     text-decoration: underline;
