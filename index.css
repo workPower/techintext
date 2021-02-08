@@ -123,7 +123,7 @@ div.main{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    height:auto;
+    height:100vh;
 }
 
 .item {
@@ -131,7 +131,7 @@ div.main{
     border: 1px solid rgb(240, 104, 240);
     border-radius: 5%;
     width: 16%;
-    height: auto;
+    height: 45%;
 }
 
 #content{
