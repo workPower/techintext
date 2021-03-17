@@ -39,7 +39,7 @@ body::-webkit-scrollbar{
 }
 div.header {
     margin: auto;
-    width: 100%;
+    width: 50%;
     text-align: center;
     align-items: center;
     padding-bottom: 3px;
@@ -53,12 +53,13 @@ div.header {
 }
 
 div.header a{
+    width: 50%;
     text-decoration: none;
     color: purple;
 }
 
 div.navi{
-    width: 100%;
+    width: 50%;
     margin: auto;
     font-size: 21px;
     padding-top: 3px;
@@ -77,18 +78,19 @@ div.navi a{
     margin-left: 20px;
 }
 /* Scroller */
-.Scroller{
+.Scroller{left: 25%;
+    width: 50%;
     margin-top: 2px;
     overflow: hidden;
     position: relative;
-    border-bottom: 2px solid purple;
+    border-bottom: 1px solid purple;
     border-bottom-left-radius: 3%;
     border-bottom-right-radius: 3%;
 }
 .ScrollC {
     display: flex;
     position: relative;
-    width: 100%;
+    width: 75%;
     height: 100%;
     margin: 0;
     text-align: center;
@@ -104,10 +106,10 @@ div.navi a{
 
     @keyframes scroll-left {
      0%   { 
-     transform: translateX(90%); 		
+     transform: translateX(83%); 		
      }
      100% { 
-     transform: translateX(-50%); 
+     transform: translateX(33%); 
      }
     }
 
@@ -119,34 +121,43 @@ div.navi a{
 
 div.main{
     padding: 7px;
-    margin: auto;
-    display: flex;
+    margin: auto; 
     flex-wrap: wrap;
-    width: 100%;
+    width: 50%;
     height:100vh;
+    align-content: center;
+    
 }
 
 .item {
-    margin:2px;
+    left: 6%;
+    width: 80%;
     border: 1px solid rgb(240, 104, 240);
     border-radius: 5%;
-    width: 16%;
-    height: 45%;
+    height:4rem;
+    text-align: center;
+    position: relative;
+    margin: 1rem;
 }
 
-#content{
+
+/* #content{
     margin: 3px;
    line-height: 1.5;
    border-radius: 5%;;
    text-align: center;
-}
+} */
 .footer{
+    margin: auto;
+    position: relative;
+    align-items: center;
+    width: 50%;
     display: flex;
     flex-wrap: wrap;  
 }
 .foot{
     margin: 1px;
-    width: 33%;
+    width: auto;
     text-align: center;
     padding-top: 20px;
     align-content: center;
@@ -157,7 +168,7 @@ div.main{
 }
 .imgflex{
     display: flex;
-    margin-left: 10px;
+    margin-left: 0;
 }
 .footimg img{
     width: 25%;
@@ -169,5 +180,5 @@ div.main{
 }
 
 .mySlides{
-    border-radius: 10%;
+    border-radius: 0%;
 }
